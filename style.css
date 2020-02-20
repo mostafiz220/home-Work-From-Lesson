@@ -1,0 +1,67 @@
+body{
+    /* background-image: url("images/site-bg.jpg"); */
+     font-family: 'Roboto Condensed', sans-serif;
+ }
+ h1{
+     font-size: 50px;
+     color: blue;
+ }
+ p{
+     color: darkslategray;
+ }
+ .overflow{
+     background-color: #eee;
+     width: 400px;
+     height: 80px;
+     border: 1px solid black;
+     overflow: auto;
+     padding: 5px;
+ }
+
+ 
+ @media only screen and (max-width:1200px){
+     body{
+         background-color:lightcoral;
+     }
+ }
+ @media only screen and (max-width:800px){
+     body{
+         background-color:yellow;
+     }
+ }
+ .animation{
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     position: relative;
+     animation-name: example;
+     animation-duration: 4s;
+     animation-delay: 2s;
+ }
+ @keyframes example{
+     0%   {background-color:red; left:0px; top:0px;}
+     25%  {background-color:yellow; left:200px; top:0px;}
+     50%  {background-color:blue; left:200px; top:200px;}
+     75%  {background-color:green; left:0px; top:200px;}
+     100% {background-color:red; left:0px; top:0px;}
+ }
+ .transition{
+     width: 100px;
+     height: 100px;
+     background: blue;
+     transition: width 3s;
+     transition-delay: 1s;
+ }
+ .transition:hover{
+     width: 450px;
+ }
+ .half-width{
+     background-image: image("images/box.jpg") ;
+     background-repeat: no-repeat;
+     width: 40%;
+     float: right;
+     margin: 2%;
+     padding: 2%;
+     border: 5px solid darkblue;}
+
+     
